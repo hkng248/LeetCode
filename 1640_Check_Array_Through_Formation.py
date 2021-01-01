@@ -1,17 +1,16 @@
-class Solution(object):
-    def canFormArray(self, arr, pieces):
-        mapOfKeys = {} 
-        for i in pieces:
-            mapOfKeys[i[0]] = i 
-            
+class Solution:
+    def canFormArray(self, arr: List[int], pieces: List[List[int]]) -> bool:
+        keys = {} 
+        for piece in pieces:
+            keys[piece[0]] = piece 
         while arr: 
-            current = arr[0]
-            if(current in mapOfKeys.keys()): 
-                for j in mapOfKeys[current]:
-                    current = arr.pop(0)
-                    if j != current: 
+            piece = arr[0] 
+            if piece in keys.keys():
+                for i in keys[piece]:
+                    if i != arr.pop(0):
                         return False 
             else:
                 return False 
-        return len(arr) == 0 
+        return len(arr) == 0
+            
         
