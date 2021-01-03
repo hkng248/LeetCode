@@ -1,3 +1,6 @@
+#What made this problem difficult was the referencing of rows as you modify the matrix 
+#You have to swap two values concurrently. You cannot swap values one at a time
+
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         n = len(matrix[0])
