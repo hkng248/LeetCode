@@ -17,7 +17,7 @@ class Solution {
                 for(int[] d: direction){
                     int r = point[0] + d[0];
                     int c = point[1] + d[1];
-                    if(r > 0 && c > 0 && r < m && c < n && grid[r][c] == 0){
+                    if(r >= 0 && c >= 0 && r < m && c < n && grid[r][c] == 0){
                         q.add(new int[]{r,c, point[2]+1});
                         grid[r][c] = 1; 
                     }

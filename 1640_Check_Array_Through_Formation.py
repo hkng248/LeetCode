@@ -11,6 +11,7 @@ class Solution:
                         return False 
             else:
                 return False 
+                
         return len(arr) == 0
             
         

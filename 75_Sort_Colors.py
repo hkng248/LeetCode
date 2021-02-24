@@ -9,9 +9,6 @@ class Solution:
                 nums[z], z = j, z + 1 
         return nums 
         
-
-
-
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         hashMap = {} 

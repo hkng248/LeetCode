@@ -11,6 +11,7 @@ class Solution {
                     if(!seen.add(number+"in row"+i) || !seen.add(number+"in column"+j) || !seen.add(number+"in block"+i/3+"-"+j/3)) return false; 
                 }
             }
+            
         }
         return true; 
     }
